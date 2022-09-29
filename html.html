@@ -1,0 +1,221 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+ </head>
+ <body>
+  <section>
+    <div class="navbar">
+       <img src="image/logo1.png" class="logo">  
+      <div class="navigation"> 
+          <ul>   
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contactus">CONTACT US</a></b></li>  
+          </ul>
+      </div>   
+     <div class="search-box">
+     <input name="box" type="text"  placeholder=" Search  product" class="in">
+     </div>          
+  </div>
+  </section>
+
+
+
+  <section class="slide">
+  <div class="heading" id="home"><h1>Home</h1></div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="image/phone.png" >
+      <div class="text">Mobile Phones</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="image/laptop1.png" >
+      <div class="text">Laptops</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="image/sw5.jpg" >
+      <div class="text">Smart Watches</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/shoe8.jpeg" >
+      <div class="text">Shoes</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+  
+
+
+  </section>
+  <!-- product -->
+  <section class="product">
+    <h1>PRODUCT</h1>
+    <div class="arrow">
+    <button class="bt">View More</button>
+    </div>
+    <div class="product-con">
+    <div class="box">
+      <img src="image/phone.png" alt="">
+      <h3>Apple iphone 13pro <br>(Green Color, 256GB)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">1,25,000</strike> <strong>1,00,000</strong> <br>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/phone4.jpg" alt="">
+      <h3>Xiaomi 12pro 5G (12GB+256/12GB+256  )</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">79,999</strike> <strong>55,000</strong><br>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/laptop3.webp" alt="">
+      <h3>ASUS Rog strixG15 <br>Ryzen 7 Octa Core</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">1,39,999</strike> <strong>1,00,000</strong> </p>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/laptop2.webp" alt="">
+      <h3> ASUS Vivobook14 <br>Intel i5 11gen (windows 11Home)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">99,999</strike> <strong>10,00,000</strong> <span>10% off</span></p>
+      <button class="btn">view</button>
+    </div>  
+    <div class="box">
+      <img src="image/sw3.avif" alt="">
+      <h3>vivo X30 pro (Green Color, 250GB)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">99,999</strike> <strong>10,00,000</strong> <span>10% off</span></p>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/sw5.jpg" alt="">
+      <h3>vivo X30 pro (Green Color, 250GB)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">99,999</strike> <strong>10,00,000</strong> <span>10% off</span></p>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/shoe2.jpg" alt="">
+      <h3>vivo X30 pro (Green Color, 250GB)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">99,999</strike> <strong>10,00,000</strong> <span>10% off</span></p>
+      <button class="btn">view</button>
+    </div> 
+    <div class="box">
+      <img src="image/shoe8.jpeg" alt="">
+      <h3>vivo X30 pro (Green Color, 250GB)</h3>
+      <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div> 
+      <p><strike style="color: red;">99,999</strike> <strong>10,00,000</strong> <span>10% off</span></p>
+      <button class="btn">view</button>
+    </div> 
+  </div>
+  </section> 
+
+
+
+
+
+
+  <section class="popup">
+    <div class="popup-box">qwer</div>
+    <div class="popup-box">qwer</div>
+    <div class="popup-box">qwer</div>
+  </section>
+   
+  <script></script>
+  
+
+ </body>
+ </html>
